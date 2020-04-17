@@ -36,7 +36,7 @@ List {
 ```
 In the example above, we have a `Student` structure including two variable `name` and `type`. To create a dynamic view displaying the list of students, we use ForEach to go through the array `students`. Notice that we're using keypath `\.name` as an id for this list, which has led to a problem when two students has the same name, particularly in this example is Peter. 
 
-![](screenshot/name1.png)
+![](/screenshot/name1.png)
 
 
 
