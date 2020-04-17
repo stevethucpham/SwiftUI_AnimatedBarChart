@@ -3,7 +3,7 @@
 
 This project follows the instruction from the video from Lets Build That App https://www.youtube.com/channel/UCuP2vJ6kRutQBfRmdcI92mA
 
-![App_Screenshot](screenshot/light_screenshot.png)
+![App_Screenshot](screenshot/light_screenshot_1.png)
 
 ### Picker with Segment Style 
 In SwiftUI, you can easily add Picker with Segment Style to the UI by using
