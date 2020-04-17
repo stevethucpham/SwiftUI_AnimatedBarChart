@@ -13,6 +13,7 @@
 		A27729622445E9BC00B09673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27729612445E9BC00B09673 /* Assets.xcassets */; };
 		A27729652445E9BC00B09673 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27729642445E9BC00B09673 /* Preview Assets.xcassets */; };
 		A27729682445E9BC00B09673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27729662445E9BC00B09673 /* LaunchScreen.storyboard */; };
+		A29883FD244765DF00D5EEC1 /* TestingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29883FC244765DF00D5EEC1 /* TestingUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A27729642445E9BC00B09673 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A27729672445E9BC00B09673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27729692445E9BC00B09673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29883FC244765DF00D5EEC1 /* TestingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A27729662445E9BC00B09673 /* LaunchScreen.storyboard */,
 				A27729692445E9BC00B09673 /* Info.plist */,
 				A27729632445E9BC00B09673 /* Preview Content */,
+				A29883FC244765DF00D5EEC1 /* TestingUIView.swift */,
 			);
 			path = AnimatedChart;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A277295C2445E9B900B09673 /* AppDelegate.swift in Sources */,
+				A29883FD244765DF00D5EEC1 /* TestingUIView.swift in Sources */,
 				A277295E2445E9B900B09673 /* SceneDelegate.swift in Sources */,
 				A27729602445E9B900B09673 /* ContentView.swift in Sources */,
 			);
