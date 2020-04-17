@@ -45,7 +45,7 @@ struct ContentView: View {
     
     @State private var pickerSelectedSystem = 0
     
-    @State var data: [Calorie] =
+    var data: [Calorie] =
         [
             Calorie(dayPart: .morning, caloriesByDay: [
                 (Days.sunday, 10),
