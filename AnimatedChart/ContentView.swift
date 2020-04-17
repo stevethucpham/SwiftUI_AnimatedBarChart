@@ -46,34 +46,34 @@ struct ContentView: View {
     @State private var pickerSelectedSystem = 0
     
     @State var data: [Calorie] =
-    [
-        Calorie(dayPart: .morning, caloriesByDay: [
-            (Days.sunday, 10),
-            (Days.monday, 20),
-            (Days.tuesday, 30),
-            (Days.wednesday, 40),
-            (Days.thursday, 50),
-            (Days.friday, 60),
-            (Days.saturday, 70)
-        ]),
-        Calorie(dayPart: .afternoon, caloriesByDay: [
-            (Days.sunday, 110),
-            (Days.monday, 120),
-            (Days.tuesday, 130),
-            (Days.wednesday, 140),
-            (Days.thursday, 150),
-            (Days.friday, 60),
-            (Days.saturday, 70)
-        ]),
-        Calorie(dayPart: .evening, caloriesByDay: [
-            (Days.sunday, 140),
-            (Days.monday, 120),
-            (Days.tuesday, 130),
-            (Days.wednesday, 140),
-            (Days.thursday, 75),
-            (Days.friday, 89),
-            (Days.saturday, 45)
-        ])
+        [
+            Calorie(dayPart: .morning, caloriesByDay: [
+                (Days.sunday, 10),
+                (Days.monday, 20),
+                (Days.tuesday, 30),
+                (Days.wednesday, 40),
+                (Days.thursday, 50),
+                (Days.friday, 60),
+                (Days.saturday, 70)
+            ]),
+            Calorie(dayPart: .afternoon, caloriesByDay: [
+                (Days.sunday, 110),
+                (Days.monday, 120),
+                (Days.tuesday, 130),
+                (Days.wednesday, 140),
+                (Days.thursday, 150),
+                (Days.friday, 60),
+                (Days.saturday, 70)
+            ]),
+            Calorie(dayPart: .evening, caloriesByDay: [
+                (Days.sunday, 140),
+                (Days.monday, 120),
+                (Days.tuesday, 130),
+                (Days.wednesday, 140),
+                (Days.thursday, 75),
+                (Days.friday, 89),
+                (Days.saturday, 45)
+            ])
     ]
     
     var body: some View {
@@ -98,7 +98,7 @@ struct ContentView: View {
                     }
                     
                 } // hstack
-                .padding(.top, 24)
+                    .padding(.top, 24)
             } // vstack
         } // zstack
     }
@@ -110,8 +110,9 @@ private extension ContentView {
             ForEach(DayParts.allCases) { day in
                 Text(day.name).tag(day.rawValue)
             }
-        }.pickerStyle(SegmentedPickerStyle())
-            .padding(.horizontal, 24)
+        }
+        .pickerStyle(SegmentedPickerStyle())
+        .padding(.horizontal, 24)
     }
 }
 

@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-struct Student {
-//    let id = UUID()
+struct Student: Identifiable {
+    let id = UUID()
     let name: String
     let type: String
 }
@@ -25,7 +25,7 @@ struct TestingUIView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(students, id: \.name) { student in
+                ForEach(students) { student in
                     HStack {
                         Text("\(student.name)")
                         Text("\(student.type)")
@@ -42,7 +42,6 @@ struct TestingUIView: View {
 // MARK: Actions
 extension TestingUIView {
     private func deleteItem(at indexSet: IndexSet) {
-        print("DEBUG: value at \(indexSet)")
         students.remove(atOffsets: indexSet)
     }
 }
