@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct Student {
-    let id = UUID()
+//    let id = UUID()
     let name: String
     let type: String
 }
@@ -17,15 +17,15 @@ struct Student {
 struct TestingUIView: View {
     
     @State var students: [Student] = [
-        Student(name: "A" , type: "Good"),
-        Student(name: "B", type: "Average"),
-        Student(name: "B" , type: "Good")
+        Student(name: "Adam" , type: "Good"),
+        Student(name: "Peter", type: "Average"),
+        Student(name: "Peter" , type: "Good")
     ]
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(students, id: \.id) { student in
+                ForEach(students, id: \.name) { student in
                     HStack {
                         Text("\(student.name)")
                         Text("\(student.type)")
